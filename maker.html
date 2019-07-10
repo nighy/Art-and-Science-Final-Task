@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+  <!-- ① スクリプトの読み込み -->
+  <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+  <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
+</head>
+<body style='margin: 0; overflow: hidden;'>
+
+<!-- シーンの追加とデバックUIを非表示 -->
+<a-scene embedded arjs="debugUIEnabled:false;">
+
+
+<a-marker type='pattern' url='origin-pattern.patt'>
+  <!-- <a-text value="興味がない" position="1 1 1" align="center" rotation="-90 0 0" color="#000000" scale="0.5 0.5 0.5"></a-text> -->
+  <!-- <a-text value="分からない" position="1.5 1 1" align="center" rotation="-90 0 0" color="#000000" scale="0.5 0.5 0.5"></a-text> -->
+  <a-text value="I have no idea" position=" 0 0 0" align="center" rotation="-90 0 0" color="#ff0000" scale="0.8 0.8 0.8"></a-text>
+  <a-text value="I have no time" position=" 0.3 0.3 0.3" align="center" rotation="-90 0 0" color="#ff0000" scale="0.4 0.4 0.4"></a-text>
+  <a-text value="I did not understand" position=" -0.8 -0.3 -0.3" align="center" rotation="-90 0 0" color="#ff0000" scale="0.4 0.4 0.4"></a-text>
+  <a-text value="I just want credit" position=" 0.3 0.6 -0.5" align="center" rotation="-90 0 0" color="#ff0000" scale="0.5 0.5 0.5"></a-text>
+  <a-text value="I am lazy" position=" -0.3 -0.5 -0.5" align="center" rotation="-90 0 0" color="#ff0000" scale="0.5 0.5 0.5"></a-text>
+  <a-text value="I disagree" position=" 0.8 -0.3 0.3" align="center" rotation="-90 0 0" color="#ff0000" scale="0.8 0.8 0.8"></a-text>
+  <a-text value="U can guess" position=" -0.8 -0.3 0.3" align="center" rotation="-90 0 0" color="#ff0000" scale="0.8 0.8 0.8"></a-text>
+</a-marker>
+
+
+  <a-entity camera></a-entity>
+</a-scene>
+</body>
+</html>
